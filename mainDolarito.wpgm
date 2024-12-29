@@ -1,0 +1,18 @@
+import wollok.game.*
+
+import dolarito.dolarito
+
+program Doralito {
+	game.title("Dolarito")
+	game.height(10)
+	game.width(10)
+
+	game.addVisualCharacter(dolarito)
+
+	keyboard.enter().onPressDo({
+		dolarito.buscar()
+	})
+	
+
+	game.start()
+}
